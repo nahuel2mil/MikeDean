@@ -1,0 +1,29 @@
+*{box-sizing: border-box;}
+#contenedor{
+    display: flex;
+    margin: 1em;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../img/recursos/fondo1.jpg);
+}
+header {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en una columna */
+}
+
+header img, header h1 {
+    color: whitesmoke;
+    display: inline-block;
+    
+}
+
+#menu-nav {
+    
+}
+
+/* tipografia base para textos */
+ p, h3 {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
