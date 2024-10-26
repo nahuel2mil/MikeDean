@@ -18,7 +18,17 @@ header img, header h1 {
 }
 
 #menu-nav {
+    padding: 1em;
+    margin: 1em;
     
+    border-radius: 50px;
+    border: 2px solid cyan;
+    
+}
+nav ul li a:hover {
+    padding: 1em;
+    background-color: darkcyan;
+    border-radius: 40px;
 }
 
 /* tipografia base para textos */
