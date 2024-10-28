@@ -1,7 +1,7 @@
 *{box-sizing: border-box;}
 #contenedor{
     display: flex;
-    margin: 1em;
+    
     justify-content: center;
     flex-direction: column;
     background-image: url(../img/recursos/fondo1.jpg);
@@ -36,4 +36,13 @@ nav ul li a:hover {
   font-family: "Chakra Petch", sans-serif;
   font-weight: 700;
   font-style: italic;
+}
+
+@media (max-width: 768px) {
+main div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
 }
