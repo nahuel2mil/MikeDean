@@ -89,24 +89,65 @@
 
         </main>
 
-        <footer class="footertips">
-          <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label parrafocomun">DEJANOS TU MAIL PARA RECIBIR MAS NOTICIAS</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-          </div>
-          <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label parrafocomun">CONTÁ COMO CONOCISTE A MIKE DEAN</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
+        <form id="myForm" novalidate>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+    <div class="valid-feedback">Correo válido.</div>
+    <div class="invalid-feedback">Por favor, ingresa un correo electrónico válido.</div>
+  </div>
+  
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" maxlength="400" required></textarea>
+    <div class="valid-feedback">Texto dentro del límite permitido.</div>
+    <div class="invalid-feedback">El texto no puede superar los 400 caracteres.</div>
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
 
-        </footer>
+<script>
+  document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    const emailInput = document.getElementById("exampleFormControlInput1");
+    const textareaInput = document.getElementById("exampleFormControlTextarea1");
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // Validar el email usando `test()`
+    if (emailPattern.test(emailInput.value)) {
+      emailInput.classList.add("is-valid");
+      emailInput.classList.remove("is-invalid");
+    } else {
+      emailInput.classList.add("is-invalid");
+      emailInput.classList.remove("is-valid");
+    }
+
+    // Validar el `textarea` usando su longitud
+    if (textareaInput.value.length > 0 && textareaInput.value.length <= 400) {
+      textareaInput.classList.add("is-valid");
+      textareaInput.classList.remove("is-invalid");
+    } else {
+      textareaInput.classList.add("is-invalid");
+      textareaInput.classList.remove("is-valid");
+    }
+
+    // Si ambos campos son válidos, muestra un mensaje
+    if (emailPattern.test(emailInput.value) && textareaInput.value.length <= 400) {
+      alert("Formulario enviado correctamente.");
+    }
+  });
+</script>
+s
         
 
 
 
 
 
-    </div> 
+     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
