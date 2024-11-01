@@ -20,3 +20,10 @@ h1 {
 	border: 2px solid cyan;
 	border-radius: 15px;
 }
+ .galeria{
+ 	display: flex;
+ 	justify-content: center;
+ 	height: 33vh; 
+ 	width: 33vw;
+
+ }

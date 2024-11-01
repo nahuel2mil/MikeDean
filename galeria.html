@@ -12,11 +12,9 @@
   <body>
     <div class="container" style="background-color: black;">
       <header>
-        <div class="row justify-content-between">
-          <div class="col-4"></div>
-            <img src="img/recursos/logoletras.png" alt="">
-          <div class="col-4 "></div>
-            <img src="img/recursos/logouno1.PNG" alt="">
+       <div class="d-flex justify-content-between">      
+          <img  src="img/recursos/logoletras.png" class="img-fluid col-4" alt="logoletras">
+          <img src="img/recursos/GALERIA.png" class="img-fluid col-8" alt="logouno1">
         </div>
       
 
@@ -46,46 +44,82 @@
         </nav>
       </header>
       <main>
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/big_the-real-mike-dean.jpeg" class="d-block w-100" alt="big_the-real-mike-dean">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>En el estudio</h5>
-              <p>experto en el uso de sintetizadores</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/mikedean1.PNG" class="d-block w-100" alt="mikedean1">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>secuenciadores</h5>
-              <p>en la musica electronica tambien se usan secuenciadores los cuales reproducen audio en loop cada un tiempo determinado</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/mikedean2.PNG" class="d-block w-100" alt="mikedean2">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>fusiones</h5>
-              <p>sintetizadores y secuenciadores pueden ser fusionados para nuevas busquedas artísticas</p>
+
+        <div class="container text-center">
+          <div class="row align-items-center">
+            <div class="col">
+              <p class="parrafocomun ">Explora la esencia creativa de Mike Dean en esta galería de imágenes exclusivas capturadas en su estudio. Desde sintetizadores hasta mesas de mezclas, cada foto muestra a Dean en su entorno de trabajo, inmerso en el proceso de creación que ha definido su carrera. Sumérgete en este recorrido visual y descubre el lugar donde nacen sus legendarios sonidos y producciones</p>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>        
 
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicators (Opcionales) -->
+          <div class="carousel-indicators">
+              <!-- 11 botones, uno por cada imagen -->
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
+          </div>
 
+          <!-- Slides -->
+          <div class="carousel-inner">
+              <!-- Imagen 1 (activa) -->
+              <div class="carousel-item active">
+                  <img src="img/mike1.jpg" class="d-block w-100" alt="Imagen 1">
+              </div>
+              <!-- Imagenes 2 al 11 -->
+              <div class="carousel-item">
+                  <img src="img/mike2.jpg" class="d-block w-100" alt="Imagen 2">
+              </div>
+              <div class="carousel-item">
+                  <img src="img/mike3.jpg" class="d-block w-100" alt="Imagen 3">
+              </div>
+              <div class="carousel-item">
+                  <img src="img/mike4.jpg" class="d-block w-100" alt="Imagen 4">
+              </div>
+              <div class="carousel-item">
+                  <img src="img/mike5.jpg" class="d-block w-100" alt="Imagen 5">
+              </div>
+              <div class="carousel-item">
+                  <img src="img/mike6.jpg" class="d-block w-100" alt="Imagen 6">
+              </div>
+              <div class="carousel-item">
+                  <img src="img/mike7.jpg" class="d-block w-100" alt="Imagen 7">
+              </div>
+              <div class="carousel-item">
+                  <img src="img/mike8.jpg" class="d-block w-100" alt="Imagen 8">
+              </div>
+              <div class="carousel-item">
+                  <img src="img/mike9.jpg" class="d-block w-100" alt="Imagen 9">
+              </div>
+              <div class="carousel-item">
+                  <img src="img/mike10.jpg" class="d-block w-100" alt="Imagen 10">
+              </div>
+              <div class="carousel-item">
+                  <img src="img/mike11.jpg" class="d-block w-100" alt="Imagen 11">
+              </div>
+          </div>
+
+          <!-- Controles de navegación -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      
       
 
 
