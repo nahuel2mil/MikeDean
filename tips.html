@@ -15,9 +15,8 @@
         <div class="d-flex justify-content-between">      
           <img  src="img/recursos/logoletras.png" class="img-fluid col-4" alt="logoletras">
           <img src="img/recursos/logouno1.PNG" class="img-fluid col-8" alt="logouno1">
-        </div>
-      
-
+        </div>    
+<!--         --->
         <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
           <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,100 +25,121 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
               <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active"  href="index.html">Inicio</a>
+                  <a class="nav-link active" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="discografia.html">Discografia</a>
+                  <a class="nav-link active" href="discografia.html">Discografía</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="exitos.html">Exitos</a>
+                  <a class="nav-link active" href="exitos.html">Éxitos</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active" href="galeria.html">Galería</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="tips.html">Tips</a>
-                </li>
-                 <li class="nav-item">
-                  <a class="nav-link active" href="datos.html">Datos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="contacto.html">Contacto</a>
+                <!-- Dropdown for Tips -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle" href="tips.html" id="tipsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tips
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="tipsDropdown">
+                    <li><a class="dropdown-item" href="tips.html">Tips</a></li>
+                    <li><a class="dropdown-item" href="tips1.html">Tip 1</a></li>
+                    <li><a class="dropdown-item" href="tips2.html">Tip 2</a></li>
+                  </ul>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
-      </header>
+     </header>
       <main >
-
-        <div class="card m-3" >
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="img/recursos/diseñodesonido.gif" class="img-fluid rounded-start" alt="diseño">
-              <img src="img/recursos/diseñodesonido1.gif" class="img-fluid rounded-start" alt="diseño1">
-              <img src="img/recursos/diseñodesonido2.gif" class="img-fluid rounded-start" alt="diseño2">
+    <div class="card text-center">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="mixing-tab" data-bs-toggle="tab" href="#mixing" role="tab" aria-controls="mixing" aria-selected="true">Consejo uno</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="mastering-tab" data-bs-toggle="tab" href="#mastering" role="tab" aria-controls="mastering" aria-selected="false">Consejo dos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="final-tab" data-bs-toggle="tab" href="#final" role="tab" aria-controls="final" aria-selected="false">Consejo Final</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <div class="tab-content" id="myTabContent">
+          <!-- Consejo uno -->
+          <div class="tab-pane fade show active" id="mixing" role="tabpanel" aria-labelledby="mixing-tab">
+            <div class="d-flex flex-column flex-md-row align-items-center">
+              <img src="img/recursos/diseñodesonido.gif" alt="Imagen de mezcla" class="img-fluid" style="width: 200px; height: 200px; object-fit: cover; margin-bottom: 15px; margin-md-right: 20px;">
+              <div>
+                <h5 class="card-title parrafocomun">Consejo uno</h5>
+                <p class="card-text parrafocomun">Experimenta con sonidos y géneros inesperados: Salir de tu zona de confort explorando otros géneros o instrumentos puede ayudarte a encontrar nuevos elementos que te inspiren. Graba sonidos de tu entorno o juega con efectos de sonido poco convencionales para dar un toque único a tu música. La fusión de géneros, como lo hace Mike Dean con el hip-hop y la electrónica, puede dar resultados poderosos.</p>
+              </div>
             </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title parrafocomun">Explora el Arte del Sonido: Sintetizadores y Diseño de Sonido</h5>
-                <p class="card-text parrafocomun">Sumergirse en el mundo de los sintetizadores y el diseño de sonido es abrir una puerta hacia posibilidades creativas infinitas. Desde los sonidos espaciales de los sintetizadores analógicos hasta las complejas texturas digitales, el universo del diseño de sonido permite a los artistas y productores musicales explorar y esculpir sonidos únicos que dan vida a su visión artística. Aprender sobre estos instrumentos y técnicas no solo amplía el arsenal creativo, sino que permite entender cómo los sonidos pueden evocar emociones y crear atmósferas. Adéntrate en esta fascinante área y descubre cómo estos conocimientos pueden transformar y potenciar la música que deseas crear..</p>
-                <p class="card-text"><small class="parrafocomun">“Mi meta siempre ha sido llevar la música un paso más allá, romper los límites de lo que se ha hecho antes.” – Mike Dean</small></p>
+          </div>
+          <!-- Consejo dos -->
+          <div class="tab-pane fade" id="mastering" role="tabpanel" aria-labelledby="mastering-tab">
+            <div class="d-flex flex-column flex-md-row align-items-center">
+              <img src="img/recursos/diseñodesonido1.gif" alt="Imagen de masterización" class="img-fluid" style="width: 200px; height: 200px; object-fit: cover; margin-bottom: 15px; margin-md-right: 20px;">
+              <div>
+                <h5 class="card-title parrafocomun">Consejo dos</h5>
+                <p class="card-text parrafocomun">Trabaja con colaboraciones estratégicas: Colaborar con otros músicos y productores puede abrirte a ideas frescas y técnicas diferentes. Aprender del enfoque y estilo de otros artistas no solo enriquecerá tu propio proceso, sino que también puede inspirarte a probar métodos nuevos.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Consejo Final -->
+          <div class="tab-pane fade" id="final" role="tabpanel" aria-labelledby="final-tab">
+            <div class="d-flex flex-column flex-md-row align-items-center">
+              <img src="img/recursos/diseñodesonido2.gif" alt="Imagen final" class="img-fluid" style="width: 200px; height: 200px; object-fit: cover; margin-bottom: 15px; margin-md-right: 20px;">
+              <div>
+                <h5 class="card-title parrafocomun">Consejo Final</h5>
+                <p class="card-text parrafocomun">Trabaja con colaboraciones estratégicas: Colaborar con otros músicos y productores puede abrirte a ideas frescas y técnicas diferentes. Aprender del enfoque y estilo de otros artistas no solo enriquecerá tu propio proceso, sino que también puede inspirarte a probar métodos nuevos.</p>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
-        <div class="container text-center">
-          <div class="row align-items-center">
-            <div class="col">
-              <h2 class="parrafocomun"> ANIMATE </h2>
-              <p class="parrafocomun">hace click en los tips y para empezar</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion accordion-flush my-5 " id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                TIP 1
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <p>Experimenta con sonidos y géneros inesperados: Salir de tu zona de confort explorando otros géneros o instrumentos puede ayudarte a encontrar nuevos elementos que te inspiren. Graba sonidos de tu entorno o juega con efectos de sonido poco convencionales para dar un toque único a tu música. La fusión de géneros, como lo hace Mike Dean con el hip-hop y la electrónica, puede dar resultados poderosos.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                TIP 2
-              </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <p>Trabaja con colaboraciones estratégicas: Colaborar con otros músicos y productores puede abrirte a ideas frescas y técnicas diferentes. Aprender del enfoque y estilo de otros artistas no solo enriquecerá tu propio proceso, sino que también puede inspirarte a probar métodos nuevos.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                TIP 3
-              </button>
-            </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <p>Usa el espacio creativo de manera flexible: Establecer un ambiente cómodo y estimulante para trabajar es fundamental. Cambia de lugar o modifica tu espacio de trabajo según el tipo de proyecto en el que estés trabajando; una atmósfera relajada, libre de distracciones y adecuada para experimentar es clave para dejar fluir la creatividad.</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </main>
+      <footer>
+        <div class="cajaformulario">
+            <div class="card mb-3 " >
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src=".." class="img-fluid rounded-start" alt="yo">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title parrafocomun">¿Quienes Somos?</h5>
+                    <p class="card-text parrafocomun"> Somos un grupo de estudiantes que decidio realizar esta pagina informativa sobre mike dean para difundir la importancia del rol de productor y masterizacion en las canciones del genero urbano.para recibir mas informacion tecnica y tips completa el siguiente formulario </p>
+                    <p class="card-text parrafocomun"> Bs As, C.A.B.A año 2024</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <form id="myForm" class="my-5" novalidate>
+              <div class="mb-3">
+                <h1>CONTACTANOS!</h1>
+                <label for="mail1" class="form-label parrafocomun">Dirección de Email</label>
+                <input type="email" class="form-control" id="mail1" placeholder="nombre@dominio.com" required>
+                <div class="valid-feedback">Correo válido.</div>
+                <div class="invalid-feedback">Por favor, ingresa un correo electrónico válido.</div>
+              </div>
+              
+              <div class="mb-3">
+                <label for="Textarea1" class="form-label parrafocomun">Como conociste a Mike Dean</label>
+                <textarea class="form-control" id="Textarea1" rows="3" maxlength="400" required></textarea>
+                <div class="valid-feedback">Texto dentro del límite permitido.</div>
+                <div class="invalid-feedback">El texto no puede superar los 400 caracteres.</div>
+              </div>
+              
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+      </footer>
     </div>
     
 

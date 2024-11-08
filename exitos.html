@@ -14,11 +14,11 @@
       <header>
         <div class="d-flex justify-content-between">      
           <img  src="img/recursos/logoletras.png" class="img-fluid col-4" alt="logoletras">
-          <img src="img/recursos/EXITOS.png" class="img-fluid col-8" alt="logouno1">
+          <img src="img/recursos/exitoss.png" class="img-fluid col-8" alt="logouno1">
         </div>
       
 
-       <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
           <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -26,25 +26,27 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
               <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active"  href="index.html">Inicio</a>
+                  <a class="nav-link active" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="discografia.html">Discografia</a>
+                  <a class="nav-link active" href="discografia.html">Discografía</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="exitos.html">Exitos</a>
+                  <a class="nav-link active" href="exitos.html">Éxitos</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active" href="galeria.html">Galería</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="tips.html">Tips</a>
-                </li>
-                 <li class="nav-item">
-                  <a class="nav-link active" href="datos.html">Datos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="contacto.html">Contacto</a>
+                <!-- Dropdown for Tips -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle" href="tips.html" id="tipsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tips
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="tipsDropdown">
+                    <li><a class="dropdown-item" href="tips.html">Tips</a></li>
+                    <li><a class="dropdown-item" href="tips1.html">Tip 1</a></li>
+                    <li><a class="dropdown-item" href="tips2.html">Tip 2</a></li>
+                  </ul>
                 </li>
               </ul>
             </div>
@@ -165,8 +167,7 @@
           </div>
         </div>
 
-      </div>
-
+      </div>-->
       <div class="d-grid gap-2 mb-5">
         <h1>escucha sus live set aca!</h1>
         <button class="btn btn-primary" type="button" onclick="window.location.href='liveset1.html'">Rolling Loud Cali 2023</button>
@@ -174,12 +175,49 @@
       </div>
 
     </main>
+    <footer>
+        <div class="cajaformulario">
+            <div class="card mb-3 " >
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src=".." class="img-fluid rounded-start" alt="yo">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title parrafocomun">¿Quienes Somos?</h5>
+                    <p class="card-text parrafocomun"> Somos un grupo de estudiantes que decidio realizar esta pagina informativa sobre mike dean para difundir la importancia del rol de productor y masterizacion en las canciones del genero urbano.para recibir mas informacion tecnica y tips completa el siguiente formulario </p>
+                    <p class="card-text parrafocomun"> Bs As, C.A.B.A año 2024</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <form id="myForm" class="my-5" novalidate>
+              <div class="mb-3">
+                <h1>CONTACTANOS!</h1>
+                <label for="mail1" class="form-label parrafocomun">Dirección de Email</label>
+                <input type="email" class="form-control" id="mail1" placeholder="nombre@dominio.com" required>
+                <div class="valid-feedback">Correo válido.</div>
+                <div class="invalid-feedback">Por favor, ingresa un correo electrónico válido.</div>
+              </div>
+              
+              <div class="mb-3">
+                <label for="Textarea1" class="form-label parrafocomun">Como conociste a Mike Dean</label>
+                <textarea class="form-control" id="Textarea1" rows="3" maxlength="400" required></textarea>
+                <div class="valid-feedback">Texto dentro del límite permitido.</div>
+                <div class="invalid-feedback">El texto no puede superar los 400 caracteres.</div>
+              </div>
+              
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </footer>
 
 
 
 
 
     </div> 
+    <script src="js/validacionformulario.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
