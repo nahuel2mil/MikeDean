@@ -57,3 +57,74 @@ body{
 	display: flex;
 	justify-content: center;
 }
+/* serum y vital estilos */
+.vst {
+	display: flex;
+	flex-direction: row-reverse;
+}
+.serumvst {
+	width: 30%;
+	height: auto;
+}
+.vsttext{
+	padding: 0.5em;
+	border: 2px solid lightcyan;
+	border-radius: 15px;
+	color: whitesmoke;
+}
+
+.comousartitulo{
+	margin-top: 2em;
+	padding: 0.5em;
+	border: 2px solid cyan;
+	border-radius: 15px;
+	color: white;
+}
+
+.accordion-item {
+    background-color: transparent; /* Elimina el fondo blanco */
+    border: 2px solid cyan; /* Bordes de color cyan */
+    border-radius: 5px; /* Bordes redondeados (opcional) */
+    margin-bottom: 10px; /* Espaciado entre acordeones */
+}
+
+.accordion-button {
+    background-color: transparent; /* Fondo transparente para los botones */
+    color: cyan; /* Texto del botón en color cyan */
+    border: none; /* Elimina bordes adicionales */
+    box-shadow: none; /* Elimina sombras (opcional) */
+}
+
+.accordion-button:focus {
+    box-shadow: none; /* Elimina sombra al hacer clic */
+}
+
+.accordion-button:not(.collapsed) {
+    color: #00FFFF; /* Cambia el color del texto cuando el acordeón está abierto */
+    background-color: rgba(0, 255, 255, 0.1); /* Fondo ligeramente cian para indicar estado activo */
+}
+
+.accordion-collapse {
+    border-top: 1px solid cyan; /* Línea superior cian en contenido colapsado */
+    background-color: transparent; /* Fondo transparente para el contenido */
+    color: white; /* Texto blanco dentro del contenido */
+}
+
+
+
+
+/* Media query para pantallas de 100px o menos */
+@media (max-width: 1000px) {
+    .vst {
+        flex-direction: column; /* Apilar elementos verticalmente */
+    }
+
+    .serumvst {
+        width: 100%; /* Imagen ocupa todo el ancho */
+    }
+
+    .vsttext {
+        margin-top: 0.5em; /* Espaciado entre imagen y texto */
+        text-align: left;
+    }
+}
