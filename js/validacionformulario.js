@@ -15,7 +15,7 @@ document.querySelector('#myForm').addEventListener('submit', function(event) {
     }
 
     // Validar el `textarea` usando su longitud
-    if (textareaInput.value.length > 10 && textareaInput.value.length <= 400) {
+    if (textareaInput.value.length > 0 && textareaInput.value.length <= 400) {
         textareaInput.classList.add("is-valid");
         textareaInput.classList.remove("is-invalid");
     } else {

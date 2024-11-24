@@ -15,17 +15,34 @@ body{
 	border-radius: 15px;
 }
 
-
+/* discografia */
 .discografia{
 	border: 5px solid cyan;
 }
+
+
 /*exitos*/
-.card{
+.fnegro{
 	background-color: black;
+}
+.card{
+	background-color: transparent !important;
 	border: 2px solid cyan;
 	}
 .fondoexitos{
 	background-image: url(../img/recursos/fondoexitos.jpg);
+}
+#playerContainer {
+  position: relative;
+  padding-top: 56.25%; 
+}
+
+#player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -33,7 +50,7 @@ body{
 .aspect-ratio {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* Proporcion16:9 */
+  padding-top: 56.25%;
 }
 
 .aspect-ratio img {
@@ -51,13 +68,7 @@ body{
 	border: 3px solid whitesmoke;
 }
 
-/* subpaginas live set */
-
-.liveset {
-	display: flex;
-	justify-content: center;
-}
-/* serum y vital estilos */
+/*serum y vital estilos */
 .vst {
 	display: flex;
 	flex-direction: row-reverse;
@@ -113,18 +124,18 @@ body{
 
 
 
-/* Media query para pantallas de 100px o menos */
+
 @media (max-width: 1000px) {
     .vst {
-        flex-direction: column; /* Apilar elementos verticalmente */
+        flex-direction: column; 
     }
 
     .serumvst {
-        width: 100%; /* Imagen ocupa todo el ancho */
+        width: 100%; 
     }
 
     .vsttext {
-        margin-top: 0.5em; /* Espaciado entre imagen y texto */
+        margin-top: 0.5em; 
         text-align: left;
     }
 }
