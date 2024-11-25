@@ -69,6 +69,9 @@ body{
 }
 
 /*serum y vital estilos */
+.titulo{
+    height: 25vh;
+}
 .vst {
 	display: flex;
 	flex-direction: row-reverse;
